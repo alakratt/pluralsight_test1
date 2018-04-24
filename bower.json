@@ -1,0 +1,34 @@
+{
+  "name": "getting-started-exercise",
+  "description": "",
+  "main": "app.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3",
+    "font-awesome": "~5.0.8"
+},
+     "overrides": {
+          "bootstrap": {
+               "main": [
+                    "dist/js/bootstrap.js",
+                    "dist/css/bootstrap.min.css",
+                    "less/bootstrap.less"
+               ]
+          },
+          "font-awesome": {
+               "main": [
+                    "web-fonts-with-css/less/fontawesome.less",
+                    "web-fonts-with-css/css/fontawesome.min.css",
+                    "web-fonts-with-css/scss/fontawesome.scss"
+               ]
+          }
+     }
+}
