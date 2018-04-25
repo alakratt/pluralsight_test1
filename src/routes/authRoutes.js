@@ -6,6 +6,7 @@ const router = function () {
 	authRouter.route('/signUp')
 	.post(function (req, res) {		
 		console.log(req.body);
+		//req.login
 	});
 	return authRouter;
 
