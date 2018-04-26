@@ -28,6 +28,7 @@ app.use(cookieParser());
 app.use(session({secret: 'library'}));
 
 require('./src/config/passport')(app);
+app.post('/signUp', passport.authenticate('local', { successRedirect: '/profile', failureRedirect: '/'}));
 
 app.set('views', './src/views');
 
